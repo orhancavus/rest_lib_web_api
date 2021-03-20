@@ -80,5 +80,5 @@ def api_filter():
 
     return jsonify(results)
 
-print(HELP_TEXT)
+print(f'Usage : {HELP_TEXT}')
 app.run()

@@ -4,6 +4,9 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+HELP_TEXT = """http://127.0.0.1:5000/api/v1/resources/books/all 
+"""
+
 # Create some test data for our catalog in the form of a list of dictionaries.
 books = [
     {'id': 0,
@@ -35,4 +38,5 @@ def home():
 def api_all():
     return jsonify(books)
 
+print(f'Usage : {HELP_TEXT}')
 app.run()
