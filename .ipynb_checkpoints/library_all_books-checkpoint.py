@@ -30,10 +30,7 @@ books = [
 @app.route('/', methods=['GET'])
 def home():
     return '''<h1>Distant Reading Archive</h1>
-<p>A prototype API for distant reading of science fiction novels.</p>
-    Query all books : <a href="http://127.0.0.1:5000/api/v1/resources/books/all"> 
-    http://127.0.0.1:5000/api/v1/resources/books/all </a>
-'''
+<p>A prototype API for distant reading of science fiction novels.</p>'''
 
 
 # A route to return all of the available entries in our catalog.
